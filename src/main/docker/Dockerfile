@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-FROM java:8
+FROM registry.cn-shanghai.aliyuncs.com/mx_base_images/spring-boot:openjdk8
 VOLUME /tmp
 ADD rocketmq-dashboard-*.jar rocketmq-dashboard.jar
 RUN sh -c 'touch /rocketmq-dashboard.jar'
